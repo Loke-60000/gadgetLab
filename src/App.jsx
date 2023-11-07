@@ -5,6 +5,7 @@ import HomePage from './views/homePage';
 import OurTeamPage from './views/ourTeamPage';
 import ServicePage from './views/servicesPages';
 import ContactPage from './views/ContactPage';
+import MainFooter from './components/MainFooter';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
+      <MainFooter/>
     </div>
   );
 }

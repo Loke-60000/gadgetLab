@@ -1,0 +1,31 @@
+.mainNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarCollapse {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbarNav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+}
+
+.navItem {
+    margin-right: 20px;
+    font-size: large;
+}
+
+.navItem:last-child {
+    margin-right: 0;
+}
+
+.navLink {
+    text-decoration: none;
+}

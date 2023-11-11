@@ -1,0 +1,93 @@
+$color-1: #07234b;
+$color-2: #67a3e5;
+
+body {
+    margin: 0;
+    color: $color-2;
+    overflow-x: hidden;
+}
+.test{
+    color: red;
+}
+.homeContainer {
+    position: relative;
+}
+.banner {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+.waveContainer {
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    z-index: 2;
+}
+.page {
+    position: relative;
+    z-index: 3;
+}
+.clouds {
+    position: absolute;
+    top: 6%;
+    width: 50%;
+    z-index: 3;
+    animation: animate3 35s linear infinite;
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 100%;
+    background-size: 700px 100px;
+    z-index: 3;
+}
+.wave1 {
+    animation: animate 30s linear infinite;
+}
+.wave2 {
+    animation: animate2 15s linear infinite;
+    opacity: 0.5;
+    animation-delay: -5s;
+    z-index: 4;
+}
+.wave3 {
+    animation: animate 30s linear infinite;
+    opacity: 0.2;
+    animation-delay: -2s;
+    z-index: 3;
+}
+.wave4 {
+    animation: animate2 15s linear infinite;
+    opacity: 0.7;
+    animation-delay: -5s;
+    z-index: 2;
+}
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 700px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -700px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%); /* This will move the image 700px to the left */
+    }
+}

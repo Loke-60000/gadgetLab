@@ -20,7 +20,7 @@ body {
 .waveContainer {
     position: absolute;
     width: 100%;
-    top: 75%;
+    top: 52%;
     z-index: 2;
 }
 .page {
@@ -90,4 +90,25 @@ body {
     100% {
         transform: translateX(200%); /* This will move the image 700px to the left */
     }
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+.imgLink {
+    width: 300px;
+    border-radius: 100%;
+    transition: .5s;
+}
+.imgLink:hover {
+    transform: scale(1.1);
+}
+.linkContainer {
+    margin: 40px;
+    text-align: center;
+}
+.linkContainer>h3 {
+    text-decoration: none;
+    color: $color-2;
 }

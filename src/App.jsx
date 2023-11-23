@@ -7,11 +7,13 @@ import ServicePage from './views/servicesPage';
 import ContactPage from './views/contactPage';
 import PortfolioPage from './views/portfolioPage';
 import MainFooter from './components/MainFooter';
+import ScrollToTop from "./scrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/team" element={<OurTeamPage />} />

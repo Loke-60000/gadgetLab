@@ -20,7 +20,7 @@ body {
 .waveContainer {
     position: absolute;
     width: 100%;
-    top: 52%;
+    top: 50%;
     z-index: 2;
 }
 .page {
@@ -95,6 +95,7 @@ body {
 .page {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .imgLink {
     width: 300px;
@@ -103,9 +104,10 @@ body {
 }
 .linkContainer {
     margin: 40px;
-    text-align: center;
     padding: 20px;
     transition: .5s;
+    text-align: center;
+    font-size: 20px;
 }
 .linkContainer:hover{
     transform: scale(1.1);
@@ -115,4 +117,38 @@ body {
 .linkContainer>h3 {
     text-decoration: none;
     color: $color-2;
+}
+
+@media (max-width: 600px) {
+    .linkContainer {
+        padding: 0;
+        margin-bottom: 0;
+        width: 100px;
+        box-shadow: 0px 5px 10px $color-1;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: $color-2;
+        color: white;
+        text-align: center;
+        margin: 10px;
+        font-size: 13px;
+    }
+    .linkContainer>h3 {
+        color: white;
+    }
+    .imgLink {
+        width: 100px;
+    }
+    .waveContainer {
+        top: 19%;
+    }
+    .wave {
+        height: 80px;
+        background-size: 700px 80px;
+        // filter: invert(1);
+        background-color: #67a3e5;
+    }
+    .page {
+        padding-top: 70px;
+    }
 }

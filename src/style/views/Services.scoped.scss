@@ -1,0 +1,46 @@
+$color-1: #07234b;
+$color-2: #67a3e5;
+
+.services {
+text-align: center;
+font-size: 35px;
+background-color: #67a3e5;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: white;
+}
+h2 {
+    font-size: 35px;
+    color: $color-2;
+}
+p {
+    font-size: 20px;
+}
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    text-align: justify;
+    margin: 20px;
+    padding: 40px;
+    background-color: $color-1;
+    color: $color-2;
+    border-radius: 20px;
+}
+.hrServices {
+    width: 50%;
+    height: 0px;
+    border: none;
+    border-top: 1px solid $color-2;
+}
+.spanServices {
+    font-weight: bolder;
+}
+p {
+    height: 100px;
+}

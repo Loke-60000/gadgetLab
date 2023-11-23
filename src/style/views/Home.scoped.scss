@@ -88,7 +88,7 @@ body {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(200%); /* This will move the image 700px to the left */
+        transform: translateX(200%);
     }
 }
 
@@ -103,6 +103,7 @@ body {
 }
 .imgLink:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 20px;
 }
 .linkContainer {
     margin: 40px;

@@ -7,6 +7,7 @@ import clouds from "../assets/nuages.png"
 import services from "../assets/services.png"
 import team from "../assets/team.png"
 import contact from "../assets/contact.png"
+import portfolio from "../assets/portfolio.png"
 
 
 function HomePage() {
@@ -23,23 +24,29 @@ function HomePage() {
       </div>
       <div className='page'>
         <Link to="/services" >
-          <div className="linkContainer services">
+          <div className="linkContainer linkServices">
             <img src={services} className='imgLink imgServices' alt="services-button" />
             <h3>SERVICES</h3>
           </div>
-        </Link>
+        </Link>  
+        <Link to="/portfolio" >
+          <div className="linkContainer linkPortfolio">
+            <img src={portfolio} className='imgLink imgPortfolio' alt="portfolio-button" />
+            <h3>PORTFOLIO</h3>
+          </div>
+        </Link>  
         <Link to="/team" >
-          <div className="linkContainer team">
+          <div className="linkContainer linkTeam">
             <img src={team} className='imgLink imgTeam' alt="our-team-button" />
             <h3>TEAM</h3>
           </div>
         </Link>
         <Link to="/contact" >
-          <div className="linkContainer team">
-            <img src={contact} className='imgLink imgTeam' alt="our-team-button" />
+          <div className="linkContainer linkContact">
+            <img src={contact} className='imgLink imgContact' alt="contact-button" />
             <h3>CONTACT</h3>
           </div>
-        </Link>  
+        </Link>
       </div>
     </div>
   );

@@ -101,13 +101,16 @@ body {
     border-radius: 100%;
     transition: .5s;
 }
-.imgLink:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px;
-}
 .linkContainer {
     margin: 40px;
     text-align: center;
+    padding: 20px;
+    transition: .5s;
+}
+.linkContainer:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px $color-2;
+    border-radius: 50px;
 }
 .linkContainer>h3 {
     text-decoration: none;

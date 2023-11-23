@@ -1,10 +1,15 @@
 $color-1: #07234b;
 $color-2: #67a3e5;
 
+html, body {
+    height: 100%;
+    margin: 0;
+}  
 .services {
 text-align: center;
 font-size: 35px;
-background-color: #67a3e5;
+background-color: $color-2;
+height: 100%;
 }
 .cards {
     display: flex;
@@ -31,6 +36,7 @@ p {
     background-color: $color-1;
     color: $color-2;
     border-radius: 20px;
+    gap: 50px;
 }
 .hrServices {
     width: 50%;

@@ -102,13 +102,6 @@ body {
     border-radius: 100%;
     transition: .5s;
 }
-<<<<<<< HEAD
-.imgLink:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px $color-1;
-}
-=======
->>>>>>> 68065a36976222b32dbe6c7785043b8746e66d28
 .linkContainer {
     margin: 40px;
     padding: 20px;
@@ -124,13 +117,14 @@ body {
 .linkContainer>h3 {
     text-decoration: none;
     color: $color-2;
+    margin-top: 10px;
 }
 
 @media (max-width: 600px) {
     .linkContainer {
         padding: 0;
         margin-bottom: 0;
-        width: 100px;
+        width: 150px;
         box-shadow: 0px 5px 10px $color-1;
         border-radius: 20px;
         padding: 20px;

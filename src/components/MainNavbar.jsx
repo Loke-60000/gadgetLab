@@ -18,6 +18,11 @@ const MainNavbar = () => {
                         </Link>
                     </li>
                     <li className='navItem'>
+                        <Link to="/portfolio" className='navLink'>
+                            <span>Portfolio</span>
+                        </Link>
+                    </li>
+                    <li className='navItem'>
                         <Link to="/team" className='navLink'>
                             <span>Our team</span>
                         </Link>

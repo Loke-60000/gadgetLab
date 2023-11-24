@@ -66,6 +66,12 @@
     border-radius: 5px;
     border: 1px solid var(--content-border-color);
   }
+  .carousel-control-next {
+    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,1)) !important;
+  }
+  .carousel-control-prev {
+    background: linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,1)) !important;
+  }
   
   @media (max-width: 768px) {
     .portfolioContentArea {

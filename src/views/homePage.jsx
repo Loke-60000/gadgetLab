@@ -22,6 +22,10 @@ function HomePage() {
           <div className="wave wave3" style={{ backgroundImage: `url(${wave})` }}></div>
           <div className="wave wave4" style={{ backgroundImage: `url(${wave})` }}></div>
       </div>
+      <div className="introduction">
+        <h2>Welcome to Gadget Lab!</h2>
+        <p>The digital forge where innovation meets function. Founded by a duo of avid web developers, we specialize in crafting cutting-edge web experiences using React. Our passion project is developing bespoke AI solutions that we aim to seamlessly integrate into future websites, apps, and beyond. Join us as we redefine the intersection of technology and human-centric design.</p>
+      </div>
       <div className='page'>
         <Link to="/services" >
           <div className="linkContainer linkServices">

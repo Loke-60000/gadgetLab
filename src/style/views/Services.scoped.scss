@@ -52,28 +52,52 @@ p {
 p {
     height: 100px;
 }
-.servicesText>p {
+.servicesText>p, .servicesText2>p {
     margin-bottom: 70px;
 }
 
 
   
 @media screen and (max-width: 750px) {
-.serviceCard .spanServices + div {
-    display: none; // Hide the additional content on small screens
-}
 
-.serviceCard button {
-    display: block; // Show the toggle button on small screens
-}
-}
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviceCard {
+        width: 80%;
+    }
+    .servicesText>p {
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    .servicesText2>p {
+        margin-bottom: 150px;
+        margin-top: 50px;
+    }
+    .serviceCard>button {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 30px !important;
+    }
 
-@media screen and (min-width: 751px) {
-.serviceCard .spanServices + div {
-    display: block; // Always show the full content on large screens
-}
+    .serviceCard .spanServices + div {
+        display: none; // Hide the additional content on small screens
+    }
 
-.serviceCard button {
-    display: none; // Hide the toggle button on large screens
-}
+    .serviceCard button {
+        display: block; // Show the toggle button on small screens
+    }
+    }
+
+    @media screen and (min-width: 751px) {
+    .serviceCard .spanServices + div {
+        display: block; // Always show the full content on large screens
+    }
+
+    .serviceCard button {
+        display: none; // Hide the toggle button on large screens
+    }
 }

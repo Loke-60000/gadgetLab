@@ -72,7 +72,7 @@ function ServicesPage() {
           </p>
           {showAIFull && (
             // Additional content shown when the state is true
-            <div className='servicesText'>
+            <div className='servicesText2'>
               <p>
               <span className='spanServices'>Tailored AI Consulting:</span> Our consulting revolves around understanding your business at its core, identifying processes that can be enhanced by AI, and strategizing the implementation of machine learning and data analytics to elevate your operations. We provide expert guidance, from conceptualizing the role of AI in your organization to executing a seamless integration.
               </p>

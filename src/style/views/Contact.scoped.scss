@@ -1,0 +1,26 @@
+$color-1: #07234b;
+$color-2: #67a3e5;
+
+.contactContainer {
+    background: $color-2;
+    color: white;
+    height: 100vh;
+}
+button {
+    background: $color-2;
+    color: white;
+    width: 10%;
+    height: 40px;
+    margin-top: 20px !important;
+    border-radius: 5px !important;
+    font-size: 20px;
+    border: 2px solid white;
+}
+button:hover {
+    color: $color-2;
+    background: white;
+    border: 2px solid white;
+}
+.contactContainer>h1 {
+    text-align: center;
+}

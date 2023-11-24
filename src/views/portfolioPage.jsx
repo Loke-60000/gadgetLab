@@ -67,10 +67,10 @@ const PortfolioPage = () => {
   );
 
   return (
-    <>
+    <div className='portfolioContainer'>
       <MainNavbar />
+      <h1 className="portfolioTitle">PORTFOLIO</h1>
       <div className="portfolioWrapper">
-        <h1 className="portfolioTitle">PORTFOLIO</h1>
         <div className="portfolioNav">
           <Container>
             <Row>
@@ -112,7 +112,7 @@ const PortfolioPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

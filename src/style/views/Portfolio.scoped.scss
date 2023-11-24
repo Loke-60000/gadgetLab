@@ -1,3 +1,6 @@
+$color-1: #07234b;
+$color-2: #67a3e5;
+
 :root {
     --primary-color: #07234b; /* dark purple */
     --background-color: #f2f2f2; /* light gray */
@@ -8,21 +11,25 @@
     --content-background-color: #fff; /* white */
     --content-border-color: #ddd; /* light gray for borders */
   }
+  .portfolioContainer {
+    background-color: $color-2;
+    height: 100vh;
+  }
   
   .portfolioWrapper {
     max-width: 80vw;
     margin: 5vh auto;
+    color: $color-2;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
+    background-color: white;
     border-radius: 10PX;
   }
   
   .portfolioTitle {
     text-align: center;
     font-size: 2em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    margin: 40px !important;
   }
   
   .portfolioNav {
@@ -87,6 +94,4 @@
       margin: 5px 0;
     }
   }
-
-
   

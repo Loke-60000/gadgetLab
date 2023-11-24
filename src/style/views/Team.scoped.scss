@@ -1,0 +1,76 @@
+$color-1: #07234b;
+$color-2: #67a3e5;
+
+.teamContainer {
+    background-color: #67a3e5;
+    display: flex;
+    flex-direction: column;
+}
+.teamCardsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.teamContainer>h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px;
+}
+.imgProfile {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px -10px black;
+}
+.lancelot, .lokman, .lokman2 {
+    display: flex;
+    margin: 40px;
+    margin-top: 0;
+    border-radius: 20px;
+    padding: 20px;
+    color: $color-2;
+    width: 70%;
+    background-color: white;
+    box-shadow: inset 0px 0px 10px black;
+    height: 100%;
+    overflow: hidden;
+}
+.lancelot {
+
+}
+.lokman {
+    align-self: flex-end;
+}
+.lokman>h3 {
+    text-align: right;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text {
+    text-align: justify;
+    padding: 20px;
+}
+.lokman>.text>h3 {
+    align-self: flex-end;
+}
+.lokman2 {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .teamCardscontainer {
+        
+    }
+    .lancelot, .lokman2 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .lokman {
+        display: none;
+    }
+}

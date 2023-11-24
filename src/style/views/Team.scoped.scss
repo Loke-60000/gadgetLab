@@ -95,6 +95,7 @@ $color-2: #67a3e5;
         bottom: 25%;
         height: 60px;
         width: 70px;
+        display: none !important;
     }
     .show-less:hover {
         background-color: $color-2;

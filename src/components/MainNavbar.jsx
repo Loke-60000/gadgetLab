@@ -1,38 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../style/components/MainNavbar.scoped.scss";
 
 const MainNavbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <nav>
-            <div id="basic-navbar-nav" className='navbarCollapse'>
-                <ul className='navbarNav'>
-                    <li className='navItem'>
-                        <Link to="/" className='navLink'>
-                            <span className='home'>Home</span>
-                        </Link>
-                    </li>
-                    <li className='navItem'>
-                        <Link to="/services" className='navLink'>
-                            <span>Services</span>
-                        </Link>
-                    </li>
-                    <li className='navItem'>
-                        <Link to="/portfolio" className='navLink'>
-                            <span>Portfolio</span>
-                        </Link>
-                    </li>
-                    <li className='navItem'>
-                        <Link to="/team" className='navLink'>
-                            <span>Our team</span>
-                        </Link>
-                    </li>
-                    <li className='navItem'>
-                        <Link to="/contact" className='navLink'>
-                            <span className='contact'>Contact</span>
-                        </Link>
-                    </li>
-                </ul>
+            <div className="navbar">
+                <button onClick={toggleMobileMenu} className={`navbar-toggler ${isMobileMenuOpen ? 'toggled' : ''}`}>
+                    <span className="toggler-bar"></span>
+                    <span className="toggler-bar"></span>
+                    <span className="toggler-bar"></span>
+                </button>
+
+                <div id="basic-navbar-nav" className={`navbarCollapse ${isMobileMenuOpen ? 'show' : ''}`}>
+                    <ul className='navbarNav'>
+                        <li className='navItem'>
+                            <Link to="/" className='navLink home'>Home</Link>
+                        </li>
+                        <li className='navItem'>
+                            <Link to="/services" className='navLink'>Services</Link>
+                        </li>
+                        <li className='navItem'>
+                            <Link to="/portfolio" className='navLink'>Portfolio</Link>
+                        </li>
+                        <li className='navItem'>
+                            <Link to="/team" className='navLink'>Our team</Link>
+                        </li>
+                        <li className='navItem'>
+                            <Link to="/contact" className='navLink contact'>Contact</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     );

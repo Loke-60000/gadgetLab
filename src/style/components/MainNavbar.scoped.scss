@@ -7,53 +7,128 @@ nav {
     align-items: center;
     background: white;
     font-weight: 600;
-    box-shadow: 0px 2px 20px 1px rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 2px 20px 1px rgba(#000000, 0.2);
+    @media (min-width: 768px){
+        justify-content: center;
+    }
 }
+
+.navbar-toggler {
+    display: none;
+    @media (max-width: 768px) {
+        margin-left: 1rem;
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .toggler-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: $color-1;
+        margin-bottom: 5px;
+        transition: all 0.3s ease;
+    }
+    &.toggled {
+        .toggler-bar {
+            &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+}
+
 .navbarCollapse {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 768px) {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 1rem;
+        &.show {
+            display: flex;
+        }
+    }
 }
+
 .navbarNav {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 2rem auto;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 }
+
 .navItem {
     margin-right: 40px;
     font-size: large;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-right: 0;
+    }
 }
+
 .navItem:last-child {
     margin-right: 0;
 }
+
 .navLink {
     text-decoration: none;
     color: $color-3;
-}
-.navLink:hover {
-    color: $color-1;
-}
-.home {
-    background: $color-1;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
-    border: 2px solid black;
-    margin-right: 50vw;
-}
-.home:hover {
-    background: white;
-    color: $color-1;
-    border: 2px solid $color-1;
-}
-.contact {
-    color: $color-1;
-    padding: 10px;
-    border-radius: 50px;
-    border: 2px solid $color-2;
-}
-.contact:hover {
-    background: $color-2;
-    color: white;
+    &:hover {
+        color: $color-1;
+    }
+    &.home {
+        background: $color-1;
+        color: white;
+        padding: 10px;
+        border-radius: 50px;
+        border: 2px solid black;
+        margin-right: 50vw;
+        &:hover {
+            background: white;
+            color: $color-1;
+            border: 2px solid $color-1;
+        }
+    }
+    &.contact {
+        color: $color-1;
+        padding: 10px;
+        border-radius: 50px;
+        border: 2px solid $color-2;
+        &:hover {
+            background: $color-2;
+            color: white;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 10px 15px;
+        color: $color-1;
+        text-align: left;
+        &.home, &.contact {
+            margin: 10px 0;
+            border-radius: 0;
+            border: none;
+        }
+    }
 }

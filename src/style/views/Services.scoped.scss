@@ -56,7 +56,6 @@ p {
     margin-bottom: 70px;
 }
 
-
   
 @media screen and (max-width: 750px) {
 
@@ -66,21 +65,29 @@ p {
         align-items: center;
     }
     .serviceCard {
-        width: 80%;
+        width: 90%;
+        padding: 20px;
+        min-height: 500px;
+        text-align: center;
+    }
+    .spanServices {
+        font-size: 20px;
     }
     .servicesText>p {
-        margin-bottom: 100px;
-        margin-top: 50px;
+        margin-top: 150px;
+        min-height: 200px;
+        text-align: left;
     }
     .servicesText2>p {
-        margin-bottom: 150px;
-        margin-top: 50px;
+        margin-top: 150px;
+        min-height: 250px;
+        text-align: left;
     }
     .serviceCard>button {
         width: 100px;
         height: 40px;
         font-size: 15px;
-        margin-top: 30px !important;
+        margin-top: 150px !important;
     }
 
     .serviceCard .spanServices + div {

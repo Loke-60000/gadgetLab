@@ -24,3 +24,16 @@ button:hover {
 .contactContainer>h1 {
     text-align: center;
 }
+
+@media (max-width: 750px) {
+    .contactContainer {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .contactButtonContainer>button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80px;
+    }
+}

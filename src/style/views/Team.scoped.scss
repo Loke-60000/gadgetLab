@@ -69,7 +69,8 @@ $color-2: #67a3e5;
   
 
 @media (max-width: 750px) {
-    .teamCardscontainer {
+    .imgProfile {
+        width: 200px;
     }
     .lancelot, .lokman2 {
         display: flex;
@@ -78,6 +79,10 @@ $color-2: #67a3e5;
         align-items: center;
         overflow-x: hidden;
         overflow-y: auto;
+        width: 90%;
+    }
+    .text {
+        text-align: left;
     }
     .lokman {
         display: none;

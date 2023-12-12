@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import MainNavbar from '../components/MainNavbar';
 import "../style/views/Team.scoped.scss";
-import lancelot from "../assets/portrait-lancelot.jpeg"
+import lancelot from "../assets/portrait-lancelot.jpg"
 import lokman from "../assets/portrait-lokman.png"
 
 function OurTeamPage() {
@@ -42,7 +42,7 @@ function OurTeamPage() {
         <div className="lokman">
           <div className='text'>
             <h3>Lokman RAMDANI</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quisquam atque possimus debitis, nemo officia, at, delectus reprehenderit voluptatibus velit ea ipsa nisi dicta nobis explicabo quasi dolore cumque asperiores fuga! Ipsam non eum ipsa, pariatur in cupiditate aliquam dignissimos cum error eligendi commodi expedita veniam ut, quam iusto omnis!</p>
+            <p>Hello! I'm Lokman, a web developer with a zest for digital art and technology. At 22, after a literary baccalaureate in Montpellier and a language course in Tokyo, I dove into web development, freelanced as a digital illustrator, and worked on various web projects using React.js and Vue.js. My adventures led me to co-found Gadget Lab. When I'm not coding or sketching, I'm sharing my passion on social media or exploring new destinations. Join me at Gadget Lab, where creativity meets innovation.</p>
           </div>
           <img src={lokman} alt="portrait-Lokman" className='imgProfile'/>
         </div>

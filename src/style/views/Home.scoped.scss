@@ -184,15 +184,18 @@ body {
     .introduction>p {
         font-size: 20px;
     }
+    .buttonScroll {
+        display: none;
+    }
 }
 
 
 
 .fade-in {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in.visible {
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .visible.introduction {
     opacity: 1;
-}
+  }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import "../style/views/Home.scoped.scss";
 import banner from "../assets/cover_gadget_lab.png"
@@ -8,13 +8,28 @@ import services from "../assets/services.png"
 import team from "../assets/team.png"
 import contact from "../assets/contact.png"
 import portfolio from "../assets/portfolio.png"
+import arrow from "../assets/arrow-down.svg"
 
 
 function HomePage() {
+  
+  const introRef = useRef(null);
+
+  const scrollToIntroduction = () => {
+    introRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const FadeInComponent = () => {
+    const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      setIsVisible(true); // Trigger the fade-in effect on component mount
+    }, []);
 
   return (
     <div className='homeContainer'>
-      <img src={clouds} className='clouds' />
+    <FadeInComponent />
+      {/* <img src={clouds} className='clouds' /> */}
       <img src={banner} alt="gadget_lab_banner" className='banner' />
       <div className="waveContainer">
           <div className="wave wave1" style={{ backgroundImage: `url(${wave})` }}></div>
@@ -22,7 +37,12 @@ function HomePage() {
           <div className="wave wave3" style={{ backgroundImage: `url(${wave})` }}></div>
           <div className="wave wave4" style={{ backgroundImage: `url(${wave})` }}></div>
       </div>
-      <div className="introduction">
+      <div>
+        <button className='buttonScroll' onClick={scrollToIntroduction}>
+          <img src={arrow} alt="scroll-button" />
+        </button>
+      </div>
+      <div className={`fade-in ${isVisible ? 'visible introduction' : ''}`} ref={introRef}>
         <h2>Welcome to Gadget Lab!</h2>
         <p>The digital forge where innovation meets function. Founded by a duo of avid web developers, we specialize in crafting cutting-edge web experiences using React. Our passion project is developing bespoke AI solutions that we aim to seamlessly integrate into future websites, apps, and beyond. Join us as we redefine the intersection of technology and human-centric design.</p>
       </div>

@@ -1,11 +1,13 @@
 $color-1: #07234b;
 $color-2: #67a3e5;
-$color-3: #8991ad;
+$color-4: rgb(239, 247, 255);
+$color-5: rgb(167, 179, 201);
+$color-6: #8991ad;
 
 nav {
     display: flex;
     align-items: center;
-    background: white;
+    background-color: $color-4;
     font-weight: 600;
     box-shadow: 0 2px 20px 1px rgba(#000000, 0.2);
     @media (min-width: 768px){
@@ -94,31 +96,53 @@ nav {
 
 .navLink {
     text-decoration: none;
-    color: $color-3;
+    color: $color-6;
     &:hover {
         color: $color-1;
     }
     &.home {
-        background: $color-1;
-        color: white;
-        padding: 10px;
+        color: $color-1;
+        padding: 15px;
         border-radius: 50px;
-        border: 2px solid black;
         margin-right: 50vw;
+        transition: .3;
+        box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgb(255, 255, 255),
+              inset 0px 0px 4px rgba(255, 255, 255, .2),
+              inset 7px 7px 15px rgba(55, 84, 170, 0),
+              inset -7px -7px 20px rgba(255, 255, 255, 0),
+              0px 0px 4px rgba(255, 255, 255, .4);
         &:hover {
-            background: white;
-            color: $color-1;
-            border: 2px solid $color-1;
+            padding: 16px;
+            font-size: 17px;
+            box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgba(255, 255, 255, 1),
+              inset 0px 0px 4px rgba(255, 255, 255, 0),
+              inset 7px 7px 15px rgba(55, 84, 170, .15),
+              inset -7px -7px 20px rgba(255, 255, 255, 1),
+              0px 0px 4px rgba(255, 255, 255, .2);
         }
     }
     &.contact {
         color: $color-1;
-        padding: 10px;
+        padding: 15px;
         border-radius: 50px;
-        border: 2px solid $color-2;
+        box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgb(252, 253, 255),
+              inset 0px 0px 4px rgba(255, 255, 255, .2),
+              inset 7px 7px 15px rgba(55, 84, 170, 0),
+              inset -7px -7px 20px rgba(255, 255, 255, 0),
+              0px 0px 4px rgba(255, 255, 255, .4);
         &:hover {
-            background: $color-2;
-            color: white;
+            color: $color-1;
+            font-size: 17px;
+            padding: 16px;
+            box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgba(255, 255, 255, 1),
+              inset 0px 0px 4px rgba(255, 255, 255, 0),
+              inset 7px 7px 15px rgba(55, 84, 170, .15),
+              inset -7px -7px 20px rgba(255, 255, 255, 1),
+              0px 0px 4px rgba(255, 255, 255, .2);
         }
     }
     @media (max-width: 768px) {
@@ -126,7 +150,7 @@ nav {
         color: $color-1;
         text-align: left;
         &.home, &.contact {
-            margin: 10px 0;
+            margin: 10px;
             border-radius: 0;
             border: none;
         }

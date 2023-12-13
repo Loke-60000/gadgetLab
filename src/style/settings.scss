@@ -2,12 +2,13 @@
 
 $color-1: #07234b;
 $color-2: #67a3e5;
+$color-3: #e0ecfb;
 
 :root {
   font-family: 'Montserrat', sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #ffff;
+  background-color: $color-3;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

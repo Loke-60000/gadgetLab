@@ -76,7 +76,7 @@ const PortfolioPage = () => {
             <Row>
               <Col>
               <Carousel
-                interval={5000}
+                interval={null}
                 activeIndex={items.findIndex((item) => item.id === activeTab)}
                 onSelect={(index) => setActiveTab(items[index].id)}
               >

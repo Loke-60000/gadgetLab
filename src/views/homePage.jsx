@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import "../style/views/Home.scoped.scss";
 import banner from "../assets/cover_gadget_lab.png"
-import wave from "../assets/wave2.png"
+import wave from "../assets/wave3.png"
 import clouds from "../assets/nuages.png"
-import services from "../assets/services.png"
-import team from "../assets/team.png"
-import contact from "../assets/contact.png"
-import portfolio from "../assets/portfolio.png"
+import services from "../assets/services2.png"
+import team from "../assets/team2.png"
+import contact from "../assets/contact2.png"
+import portfolio from "../assets/portfolio2.png"
 import arrow from "../assets/arrow-down.svg"
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
@@ -73,6 +73,8 @@ function HomePage() {
         <h2>Welcome to Gadget Lab!</h2>
         <p>The digital forge where innovation meets function. Founded by a duo of avid web developers, we specialize in crafting cutting-edge web experiences using React. Our passion project is developing bespoke AI solutions that we aim to seamlessly integrate into future websites, apps, and beyond. Join us as we redefine the intersection of technology and human-centric design.</p>
       </div>
+      </FadeIn>
+      <FadeIn visible={isVisible} delay={500} transitionDuration={2500}>
       <div className='page'>
         <Link to="/services" >
           <div className="linkContainer linkServices">

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import "../style/views/Services.scoped.scss";
 import MainNavbar from '../components/MainNavbar';
+import www from '../assets/WWW-logo.png'
+import ai from '../assets/AI-logo.png'
 
 function ServicesPage() {
 
@@ -42,6 +44,7 @@ function ServicesPage() {
       <h1>SERVICES</h1>
       <div className="cards">
         <div className="serviceCard web">
+          <img src={www} />
           <h2>Web Development</h2>
           <p><span className='spanServices'>Dive into the future of web development with our specialized services. Leveraging the robust capabilities of React, Vue, and classic JavaScript, we deliver high-performance websites and applications designed to meet the modern demands of businesses and users alike.</span>
           </p>
@@ -67,6 +70,7 @@ function ServicesPage() {
         </div>
         
         <div className="serviceCard ia">
+          <img src={ai} /> 
           <h2>AI Consulting and Development</h2>
           <p><span className='spanServices'>Step into the era of intelligent operations with our dedicated AI consulting services. As we craft the web of tomorrow with React, Vue, and JavaScript, we also pave the way for smarter business solutions through artificial intelligence.</span>
           </p>

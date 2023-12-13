@@ -1,8 +1,10 @@
 $color-1: #07234b;
-$color-2: #67a3e5;
+// $color-2: #67a3e5;
+$color-2: #4292c7;
+$color-3: #e0ecfb;
 
 .teamContainer {
-    background-color: #67a3e5;
+    background-color: $color-3;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +15,6 @@ $color-2: #67a3e5;
     margin-right: 5%;
 }
 .teamContainer>h1 {
-    color: white;
     font-size: 60px;
     text-align: center;
     margin: 30px;
@@ -21,7 +22,6 @@ $color-2: #67a3e5;
 .imgProfile {
     width: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 25px -10px black;
 }
 .lancelot, .lokman, .lokman2 {
     display: flex;
@@ -29,13 +29,15 @@ $color-2: #67a3e5;
     margin-top: 0;
     border-radius: 20px;
     padding: 20px;
-    color: $color-2;
     width: 70%;
-    background-color: white;
-    box-shadow: inset 0px 0px 10px black;
-}
-.lancelot {
-
+    background-color: $color-3;
+    // box-shadow: inset 0px 0px 10px black;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgb(255, 255, 255),
+              inset 0px 0px 4px rgba(255, 255, 255, .2),
+              inset 7px 7px 15px rgba(55, 84, 170, 0),
+              inset -7px -7px 20px rgba(255, 255, 255, 0),
+              0px 0px 4px rgba(255, 255, 255, 0);
 }
 .lokman {
     align-self: flex-end;

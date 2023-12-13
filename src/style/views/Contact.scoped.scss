@@ -1,25 +1,26 @@
 $color-1: #07234b;
-$color-2: #67a3e5;
+// $color-2: #67a3e5;
+$color-2: #4292c7;
+$color-3: #e0ecfb;
+$color-4: rgb(239, 247, 255);
+$color-5: rgb(167, 179, 201);
 
 .contactContainer {
-    background: $color-2;
-    color: white;
     height: 100vh;
 }
-button {
-    background: $color-2;
-    color: white;
+.contactButtonContainer>button {
+    background: white;
+    color: $color-2;
     width: 10%;
     height: 40px;
     margin-top: 20px !important;
     border-radius: 5px !important;
     font-size: 20px;
-    border: 2px solid white;
+    border: none;
 }
 button:hover {
-    color: $color-2;
-    background: white;
-    border: 2px solid white;
+    color: white;
+    background: $color-2;
 }
 .contactContainer>h1 {
     text-align: center;

@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import MainNavbar from '../components/MainNavbar';
 import "../style/views/Team.scoped.scss";
 import lancelot from "../assets/portrait-lancelot.jpg"
-import lokman from "../assets/portrait-lokman.png"
+import lokman from "../assets/pp-placeholder.jpg"
 
 function OurTeamPage() {
 

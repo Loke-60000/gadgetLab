@@ -1,5 +1,7 @@
 $color-1: #07234b;
-$color-2: #67a3e5;
+// $color-2: #67a3e5;
+$color-2: #4292c7;
+$color-3: #e0ecfb;
 
 html, body {
     height: 100%;
@@ -8,19 +10,18 @@ html, body {
 .services {
 text-align: center;
 font-size: 35px;
-background-color: $color-2;
 height: 100%;
+background-color: $color-3;
 }
 .cards {
     display: flex;
     justify-content: center;
 }
 .services>h1 {
-    color: white !important;
     font-size: 55px !important;
     margin: 20px !important;
 }
-.services>h2 {
+.serviceCard>h2 {
     font-size: 35px;
     color: $color-2;
 }
@@ -35,10 +36,21 @@ p {
     text-align: justify;
     margin: 20px;
     padding: 40px;
-    background-color: $color-1;
     color: $color-2;
     border-radius: 20px;
     gap: 50px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgb(243, 247, 252),
+              inset 0px 0px 4px rgba(255, 255, 255, .2),
+              inset 7px 7px 15px rgba(55, 84, 170, 0),
+              inset -7px -7px 20px rgba(255, 255, 255, 0),
+              0px 0px 4px rgba(255, 255, 255, 0);
+}
+.serviceCard>img {
+    border-radius: 100%;
+    width: 100px;
+    box-shadow: 7px 7px 10px rgba(55, 84, 170, .5),
+              -7px -7px 5px rgb(255, 255, 255);
 }
 .hrServices {
     width: 50%;
@@ -69,6 +81,12 @@ p {
         padding: 20px;
         min-height: 500px;
         text-align: center;
+    }
+    .serviceCard>button {
+        border-radius: 50px;
+        background: $color-2;
+        color: white;
+        border: none;
     }
     .spanServices {
         font-size: 20px;

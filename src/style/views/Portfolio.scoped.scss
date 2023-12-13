@@ -1,34 +1,34 @@
 $color-1: #07234b;
-$color-2: #67a3e5;
+// $color-2: #67a3e5;
+$color-2: #4292c7;
+$color-3: #e0ecfb;
 
 :root {
     --primary-color: #07234b; /* dark purple */
-    --background-color: #f2f2f2; /* light gray */
+    --background-color: $color-3; /* light gray */
     --text-color: #333; /* dark gray */
     --nav-hover-color: #ddd; /* light gray for hover state */
     --nav-active-color: #bbb; /* medium gray for active state */
     --nav-border-color: #333; /* dark gray for border */
-    --content-background-color: #fff; /* white */
+    --content-background-color: $color-3; /* white */
     --content-border-color: #ddd; /* light gray for borders */
   }
   .portfolioContainer {
-    background-color: $color-2;
+    background-color: $color-3;
     height: 100vh;
   }
   
   .portfolioWrapper {
-    max-width: 80vw;
+    max-width: 75vw;
     margin: 5vh auto;
     color: $color-2;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    border-radius: 10PX;
+    border-radius: 10px;
   }
   
   .portfolioTitle {
     text-align: center;
-    font-size: 2em;
+    font-size: 55px;
     margin: 40px !important;
   }
   
@@ -36,6 +36,16 @@ $color-2: #67a3e5;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    background: $color-3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+              -7px -7px 20px rgb(243, 247, 252),
+              inset 0px 0px 4px rgba(255, 255, 255, .2),
+              inset 7px 7px 15px rgba(55, 84, 170, 0),
+              inset -7px -7px 20px rgba(255, 255, 255, 0),
+              0px 0px 4px rgba(255, 255, 255, 0);
+    margin-bottom: 50px;
   }
   
   .portfolioNav ul {
@@ -63,7 +73,7 @@ $color-2: #67a3e5;
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   .portfolioContent {
@@ -71,12 +81,13 @@ $color-2: #67a3e5;
     background-color: var(--content-background-color);
     padding: 20px;
     border-radius: 5px;
-    border: 1px solid var(--content-border-color);
   }
   .carousel-control-next {
+    border-radius: 6px;
     background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,1)) !important;
   }
   .carousel-control-prev {
+    border-radius: 6px;
     background: linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,1)) !important;
   }
   

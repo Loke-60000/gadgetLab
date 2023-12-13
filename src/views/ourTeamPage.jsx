@@ -27,7 +27,7 @@ function OurTeamPage() {
   return (
     <div className='teamContainer'>
       <MainNavbar/>
-      <h1>Our Team</h1>
+      <h1>OUR TEAM</h1>
       <div className='teamCardsContainer'>
         <div className="lancelot">
           <img src={lancelot} alt="portrait-Lancelot" className='imgProfile'/>

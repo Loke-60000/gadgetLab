@@ -69,7 +69,7 @@ const ContactPage = () => {
     <div className='contactContainer'>
       <MainNavbar/>
       <div className='container'>
-        <h1>Contact</h1>
+        <h1>CONTACT</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name</label>

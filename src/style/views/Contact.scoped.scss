@@ -8,6 +8,11 @@ $color-5: rgb(167, 179, 201);
 .contactContainer {
     height: 100vh;
 }
+.contactContainer>.container>h1 {
+    margin: 40px;
+    font-size: 55px;
+    text-align: center;
+}
 .contactButtonContainer>button {
     background: white;
     color: $color-2;

@@ -105,7 +105,7 @@ nav {
         padding: 15px;
         border-radius: 50px;
         margin-right: 50vw;
-        transition: .3;
+        transition: .3s;
         box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
               -7px -7px 20px rgb(255, 255, 255),
               inset 0px 0px 4px rgba(255, 255, 255, .2),
@@ -127,6 +127,7 @@ nav {
         color: $color-1;
         padding: 15px;
         border-radius: 50px;
+        transition: .3s;
         box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
               -7px -7px 20px rgb(252, 253, 255),
               inset 0px 0px 4px rgba(255, 255, 255, .2),

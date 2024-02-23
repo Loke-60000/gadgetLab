@@ -92,6 +92,12 @@ $color-3: #e0ecfb;
   }
   
   @media (max-width: 768px) {
+    .portfolioWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .portfolioContentArea {
       flex-direction: column;
     }
@@ -100,9 +106,26 @@ $color-3: #e0ecfb;
       margin-right: 0;
       margin-bottom: 20px;
     }
+
+    .portfolioNav {
+      margin-bottom: 20px;
+      width: 95vw;
+    }
+
+    .carousel-inner {
+      height: auto;
+    }
+    .card-img {
+      height: auto;
+      object-fit: fill;
+    }
   
     .portfolioNav li {
       margin: 5px 0;
+    }
+
+    .carousel-indicators>button {
+      display: none;
     }
   }
   

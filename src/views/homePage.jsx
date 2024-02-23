@@ -70,7 +70,7 @@ function HomePage() {
       </div>
       <FadeIn visible={isVisible} transitionDuration={1500}>
       <div className="introduction" ref={introRef}>
-        <h2>Welcome to Gadget Lab!</h2>
+        <h2>Welcome to GADGET LAB!</h2>
         <p>The digital forge where innovation meets function. Founded by a duo of avid web developers, we specialize in crafting cutting-edge web experiences using React. Our passion project is developing bespoke AI solutions that we aim to seamlessly integrate into future websites, apps, and beyond. Join us as we redefine the intersection of technology and human-centric design.</p>
       </div>
       </FadeIn>

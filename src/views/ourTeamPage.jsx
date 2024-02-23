@@ -30,7 +30,7 @@ function OurTeamPage() {
       <h1>OUR TEAM</h1>
       <div className='teamCardsContainer'>
         <div className="lancelot">
-          <img src={lancelot} alt="portrait-Lancelot" className='imgProfile'/>
+          <img src={lokman} alt="portrait-Lancelot" className='imgProfile'/>
           <div className='text'>
             <h3>Lancelot CARRAU</h3>
             {showFullLancelot && (

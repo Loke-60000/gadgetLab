@@ -109,6 +109,12 @@ $color-3: #e0ecfb;
         opacity: 1;
         color: white;
     }
+    .read-more {
+        background-color: $color-3;
+        border-radius: 25px;
+        border: 2px solid $color-2;
+        color: $color-2;
+    }
 }
 
 @media screen and (min-width: 751px) {

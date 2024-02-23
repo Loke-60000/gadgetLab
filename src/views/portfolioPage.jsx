@@ -5,13 +5,16 @@ import JinJooContent from '../components/JinJooContent';
 import LokmanContent from '../components/LokmanContent';
 import AmadeusContent from '../components/AmadeusContent';
 import AttoChannelContent from '../components/AttoChannelContent';
+import BBContent from '../components/BBContent';
 import jinJooImg from '../assets/port-jinjoo.jpg';
+import BBImg from '../assets/BB_img.png';
 import lokmanImg from '../assets/port-lokman.jpg';
 import amadeusImg from '../assets/port-amadeus.jpg';
 import attochannelNavimg from '../assets/nav-port-attochannel.jpg';
 import jinJooNavImg from '../assets/nav-port-jinjoo.jpg';
 import lokmanNavImg from '../assets/nav-port-lokman.jpg';
 import amadeusNavImg from '../assets/nav-port-amadeus.jpg';
+import BBNavImg from '../assets/BB-nav.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Card, Container, Row, Col } from 'react-bootstrap';
 
@@ -28,6 +31,8 @@ const PortfolioPage = () => {
         return amadeusImg;
       case 'attochannel':
         return attochannelNavimg;
+      case 'BB':
+        return BBImg; // Correction effectuée ici
       default:
         return jinJooImg;
     }
@@ -38,6 +43,7 @@ const PortfolioPage = () => {
     { id: 'lokman', alt: 'Lokman' },
     { id: 'amadeus', alt: 'Amadeus' },
     { id: 'attochannel', alt: '@channel' },
+    { id: 'BB', alt: 'Beau & Bun' }, // Assurez-vous que cet item est bien ajouté
   ];
 
   const handleItemClick = (itemId) => {
@@ -58,7 +64,9 @@ const PortfolioPage = () => {
               ? lokmanNavImg
               : item.id === 'amadeus'
               ? amadeusNavImg
-              : attochannelNavimg
+              : item.id === 'attochannel'
+              ? attochannelNavimg
+              : BBNavImg // Ajout de la condition pour BB
           }
           alt={item.alt}
         />
@@ -80,15 +88,15 @@ const PortfolioPage = () => {
                 activeIndex={items.findIndex((item) => item.id === activeTab)}
                 onSelect={(index) => setActiveTab(items[index].id)}
               >
-                {items.map((item) => (
+                {items.map((item, index) => (
                   <Carousel.Item key={item.id}>
                     <Row>
                       <CustomCarouselItem item={item} />
                       <CustomCarouselItem
-                        item={items[(items.findIndex((i) => i.id === item.id) + 1) % items.length]}
+                        item={items[(index + 1) % items.length]}
                       />
                       <CustomCarouselItem
-                        item={items[(items.findIndex((i) => i.id === item.id) + 2) % items.length]}
+                        item={items[(index + 2) % items.length]}
                       />
                     </Row>
                   </Carousel.Item>
@@ -109,6 +117,7 @@ const PortfolioPage = () => {
             {activeTab === 'lokman' && <LokmanContent />}
             {activeTab === 'amadeus' && <AmadeusContent />}
             {activeTab === 'attochannel' && <AttoChannelContent />}
+            {activeTab === 'BB' && <BBContent />}
           </div>
         </div>
       </div>

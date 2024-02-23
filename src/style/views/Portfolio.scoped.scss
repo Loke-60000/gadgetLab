@@ -69,9 +69,8 @@ $color-3: #e0ecfb;
     margin-right: 20px;
   }
   
-  .portfolioImage img {
+  .portfolioImage>img {
     width: 100%;
-    height: auto;
     display: block;
     border-radius: 10px;
   }
